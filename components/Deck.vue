@@ -58,7 +58,7 @@ const showCount = ref(true)
 				label="Show History"
 				inset
 			/>
-			<v-flex flex-row>
+			<div class="d-flex flex-wrap">
 				<template
 					v-if="showHistory"
 					v-for="(cardSig, index) in deck.cardHistory"
@@ -71,7 +71,7 @@ const showCount = ref(true)
 						{{ reko.countHistory.value[index] }}
 					</v-flex>
 				</template>
-			</v-flex>
+			</div>
 		</v-col>
 	</v-row>
 </template>
