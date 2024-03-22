@@ -20,11 +20,7 @@ const items = [
 
 			<v-navigation-drawer expand-on-hover rail>
 				<v-list>
-					<v-list-item
-						prepend-icon="mdi-home"
-						title="Home"
-						to="/"
-					></v-list-item>
+					<v-list-item prepend-icon="mdi-home" title="Home" to="/"></v-list-item>
 				</v-list>
 
 				<v-divider></v-divider>

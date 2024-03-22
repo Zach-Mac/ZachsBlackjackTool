@@ -1,22 +1,25 @@
-<script setup lang="ts">
-const numDecks = ref('1')
-
-const numDecksComputed = computed(() => parseInt(numDecks.value))
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<v-row>
 		<v-col>
 			<v-row>
-				<v-combobox
+				<v-select
 					label="Number of decks"
-					v-model="numDecks"
+					v-model="shoeStore.numDecks"
 					type="number"
 					variant="solo"
 					:items="[1, 2, 3, 4, 5, 6, 7, 8]"
-				></v-combobox>
+				></v-select>
+				<v-select
+					label="Number of cards to draw"
+					v-model="shoeStore.numCardsToDraw"
+					type="number"
+					variant="solo"
+					:items="[1, 2, 3, 4, 5, 6]"
+				></v-select>
 			</v-row>
-			<Deck :numDecks="numDecksComputed" :key="numDecksComputed" />
+			<Shoe />
 		</v-col>
 	</v-row>
 </template>
