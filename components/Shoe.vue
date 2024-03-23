@@ -4,6 +4,8 @@ const historyCardSize = ref(75)
 
 const showHistory = ref(true)
 const showCount = ref(true)
+
+onKeyStroke(['Enter', ' '], shoeStore.deck.draw)
 </script>
 
 <template>

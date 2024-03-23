@@ -2,7 +2,7 @@
 // import { md3 } from 'vuetify/blueprints'
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ['@invictus.codes/nuxt-vuetify'],
+	modules: ['@invictus.codes/nuxt-vuetify', '@vueuse/nuxt'],
 	vuetify: {
 		vuetifyOptions: {
 			display: {
